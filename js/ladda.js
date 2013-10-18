@@ -176,6 +176,13 @@
 
 		};
 
+		if( window.jQuery )
+	        {
+	            $(button).on( 'ladda-stop', function(){
+	                instance.stop();
+	            });
+	        }
+
 		ALL_INSTANCES.push( instance );
 
 		return instance;
